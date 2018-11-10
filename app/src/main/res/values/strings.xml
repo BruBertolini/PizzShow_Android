@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PizzShow</string>
+    <string name="label_dado_cliente">Dados do Cliente:</string>
+    <string name="hint_informe_nome_cliente">Informe o nome do cliente</string>
+    <string name="label_escolha_pizza">Escolha a(s) pizza(s) que deseja:</string>
+    <string name="opcao_brocolis">Brocólis</string>
+    <string name="opcao_frango_com_catupiry">Frangos Catupiry</string>
+    <string name="opcao_portuguesa">Portuguesa</string>
+    <string name="opcao_calabresa">Calabresa</string>
+    <string name="label_tamanho_da_pizza">Tamanho da Pizza:</string>
+    <string name="opcao_pequena">Pequena</string>
+    <string name="opcao_media">Média</string>
+    <string name="opcao_grande">Grande</string>
+    <string name="label_forma_de_pagamento">Forma de Pagamento:</string>
+
+    <string name="credito">Cartão de Crédito</string>
+    <string name="debito">Cartão de Débito</string>
+    <string name="vale">Vale refeição</string>
+    <string name="cupom">Cupom</string>
+    <string name="fiado">Fiado</string>
+    <string name="botao_calcular_preco">Calcular preço</string>
+</resources>

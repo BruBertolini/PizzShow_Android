@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/label_dado_cliente" />
+
+        <EditText
+            style="@style/match_wrap"
+            android:hint="@string/hint_informe_nome_cliente"
+            android:inputType="" />
+
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/label_escolha_pizza" />
+
+        <LinearLayout style="@style/container_linha">
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/opcao_brocolis" />
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/opcao_portuguesa" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/container_linha">
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/opcao_calabresa" />
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/opcao_frango_com_catupiry" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/label_tamanho_da_pizza" />
+
+        <RadioGroup style="@style/margens_laterais_mw">
+
+            <RadioButton
+                style="@style/match_wrap"
+                android:text="@string/opcao_pequena" />
+
+            <RadioButton
+                style="@style/match_wrap"
+                android:text="@string/opcao_media" />
+
+            <RadioButton
+                style="@style/match_wrap"
+                android:text="@string/opcao_grande" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/label_forma_de_pagamento" />
+
+        <Spinner
+            style="@style/margens_laterais_mw"
+            android:entries="@array/formas_pagamento" />
+
+        <Button
+            style="@style/margens_mw"
+            android:background="@drawable/botao_personalizado"
+            android:text="@string/botao_calcular_preco"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
