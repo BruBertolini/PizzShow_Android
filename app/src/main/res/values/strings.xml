@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PizzShow</string>
+    <string name="app_name">Pizza do Zé</string>
     <string name="label_dado_cliente">Dados do Cliente:</string>
     <string name="hint_informe_nome_cliente">Informe o nome do cliente</string>
     <string name="label_escolha_pizza">Escolha a(s) pizza(s) que deseja:</string>

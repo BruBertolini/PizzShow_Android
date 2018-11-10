@@ -1,9 +1,12 @@
 package br.com.bruna.helloandroid.ui.main
 
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import br.com.bruna.helloandroid.R
+import br.com.bruna.helloandroid.model.Pedido
+import br.com.bruna.helloandroid.ui.checkout.CheckoutActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,10 +19,16 @@ class MainActivity : AppCompatActivity() {
 
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
 
-        val nome = intent.getStringExtra("nomeCliente")
-        val telefone = intent.getStringExtra("telefoneCliente")
+        mainViewModel.nomeCliente = intent.getStringExtra("nomeCliente")
+        mainViewModel.telefoneCliente = intent.getStringExtra("telefoneCliente")
 
-        labelNomeCliente.text = getString(R.string.label_oi, nome)
+        labelNomeCliente.text = getString(R.string.label_oi, mainViewModel.nomeCliente)
+
+        btnCalcular.setOnClickListener{
+            val intent = Intent(this, CheckoutActivity::class.java)
+            intent.putExtra("pedido", gerarPedido())
+            startActivity(intent)
+        }
 
         setListeners()
         configViewModel()
@@ -49,5 +58,11 @@ class MainActivity : AppCompatActivity() {
         cbPortuguesa.setOnCheckedChangeListener { buttonView, isChecked ->
             mainViewModel.isPortuguesaSelecionado = isChecked
         }
+
+
+    }
+
+    private fun gerarPedido(): Pedido{
+        return Pedido(mainViewModel.nomeCliente, mainViewModel.telefoneCliente)
     }
 }
