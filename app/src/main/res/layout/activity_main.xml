@@ -15,17 +15,12 @@
 
 
         <TextView
+            android:id="@+id/labelNomeCliente"
             style="@style/label_titulo"
             android:layout_marginTop="0dp"
-            android:text="@string/label_dado_cliente" />
+            android:layout_marginBottom="-20dp"
+            tools:text="@string/label_dado_cliente" />
 
-        <TextView
-            android:id="@+id/labelNomeCliente"
-            style="@style/margens_mw"
-            android:layout_margin="0dp"
-            android:inputType=""
-            android:textSize="24sp"
-            tools:text="Nome do cliente" />
 
         <TextView
             style="@style/label_titulo"
@@ -34,10 +29,12 @@
         <LinearLayout style="@style/container_linha">
 
             <CheckBox
+                android:id="@+id/cbBrocolis"
                 style="@style/checkbox_pizza"
                 android:text="@string/opcao_brocolis" />
 
             <CheckBox
+                android:id="@+id/cbPortuguesa"
                 style="@style/checkbox_pizza"
                 android:text="@string/opcao_portuguesa" />
 
@@ -46,10 +43,12 @@
         <LinearLayout style="@style/container_linha">
 
             <CheckBox
+                android:id="@+id/cbCalabresa"
                 style="@style/checkbox_pizza"
                 android:text="@string/opcao_calabresa" />
 
             <CheckBox
+                android:id="@+id/cbFrango"
                 style="@style/checkbox_pizza"
                 android:text="@string/opcao_frango_com_catupiry" />
 
@@ -84,6 +83,7 @@
             android:entries="@array/formas_pagamento" />
 
         <Button
+            android:id="@+id/btnCalcular"
             style="@style/margens_mw"
             android:background="@drawable/botao_personalizado"
             android:text="@string/botao_calcular_preco"
