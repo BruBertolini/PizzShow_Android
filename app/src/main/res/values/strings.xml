@@ -12,11 +12,14 @@
     <string name="opcao_media">Média</string>
     <string name="opcao_grande">Grande</string>
     <string name="label_forma_de_pagamento">Forma de Pagamento:</string>
-
+    <string name="label_oi">Oie, %1$s </string>
     <string name="credito">Cartão de Crédito</string>
     <string name="debito">Cartão de Débito</string>
     <string name="vale">Vale refeição</string>
     <string name="cupom">Cupom</string>
     <string name="fiado">Fiado</string>
     <string name="botao_calcular_preco">Calcular preço</string>
+    <string name="hint_informe_nome">Informe seu nome</string>
+    <string name="hint_informe_telefone">Informe o telefone</string>
+    <string name="label_iniciar">Iniciar</string>
 </resources>

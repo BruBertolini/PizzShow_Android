@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".ui.main.MainActivity">
 
 
         <TextView
@@ -19,10 +19,13 @@
             android:layout_marginTop="0dp"
             android:text="@string/label_dado_cliente" />
 
-        <EditText
-            style="@style/match_wrap"
-            android:hint="@string/hint_informe_nome_cliente"
-            android:inputType="" />
+        <TextView
+            android:id="@+id/labelNomeCliente"
+            style="@style/margens_mw"
+            android:layout_margin="0dp"
+            android:inputType=""
+            android:textSize="24sp"
+            tools:text="Nome do cliente" />
 
         <TextView
             style="@style/label_titulo"
